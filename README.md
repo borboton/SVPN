@@ -15,7 +15,11 @@ alias gbm='git branch -m'
 alias gbM='git branch -M'
 alias gbs='git show-branch'
 alias gbS='git show-branch -a'
+```
 
+
+
+```
 # Commit (c)
 alias gc='git commit --verbose'
 alias gca='git commit --verbose --all'
@@ -30,7 +34,9 @@ alias gcr='git revert'
 alias gcR='git reset "HEAD^"'
 alias gcs='git show'
 alias gcl='git-commit-lost'
+```
 
+```
 # Conflict (C)
 alias gCl='git status | sed -n "s/^.*both [a-z]*ed: *//p"'
 alias gCa='git add $(gCl)'
@@ -39,7 +45,9 @@ alias gCo='git checkout --ours --'
 alias gCO='gCo $(gCl)'
 alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
+```
 
+```
 # Data (d)
 alias gd='git ls-files'
 alias gdc='git ls-files --cached'
@@ -48,13 +56,17 @@ alias gdm='git ls-files --modified'
 alias gdu='git ls-files --other --exclude-standard'
 alias gdk='git ls-files --killed'
 alias gdi='git status --porcelain --short --ignored | sed -n "s/^!! //p"'
+```
 
+```
 # Fetch (f)
 alias gf='git fetch'
 alias gfc='git clone'
 alias gfm='git pull'
 alias gfr='git pull --rebase'
+```
 
+```
 # Grep (g)
 alias gg='git grep'
 alias ggi='git grep --ignore-case'
@@ -62,7 +74,9 @@ alias ggl='git grep --files-with-matches'
 alias ggL='git grep --files-without-matches'
 alias ggv='git grep --invert-match'
 alias ggw='git grep --word-regexp'
+```
 
+```
 # Index (i)
 alias gia='git add'
 alias giA='git add --patch'
@@ -73,7 +87,9 @@ alias gir='git reset'
 alias giR='git reset --patch'
 alias gix='git rm -r --cached'
 alias giX='git rm -rf --cached'
+```
 
+```
 # Log (l)
 alias gl='git log --topo-order --pretty=format:"${_git_log_medium_format}"'
 alias gls='git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"'
@@ -82,14 +98,18 @@ alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
 alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
 alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
 alias glc='git shortlog --summary --numbered'
+```
 
+```
 # Merge (m)
 alias gm='git merge'
 alias gmC='git merge --no-commit'
 alias gmF='git merge --no-ff'
 alias gma='git merge --abort'
 alias gmt='git mergetool'
+```
 
+```
 # Push (p)
 alias gp='git push'
 alias gpf='git push --force'
@@ -98,14 +118,18 @@ alias gpA='git push --all && git push --tags'
 alias gpt='git push --tags'
 alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
 alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
+```
 
+```
 # Rebase (r)
 alias gr='git rebase'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grs='git rebase --skip'
+```
 
+```
 # Remote (R)
 alias gR='git remote'
 alias gRl='git remote --verbose'
@@ -116,7 +140,9 @@ alias gRu='git remote update'
 alias gRp='git remote prune'
 alias gRs='git remote show'
 alias gRb='git-hub-browse'
+```
 
+```
 # Stash (s)
 alias gs='git stash'
 alias gsa='git stash apply'
@@ -130,7 +156,8 @@ alias gsr='git-stash-recover'
 alias gss='git stash save --include-untracked'
 alias gsS='git stash save --patch --no-keep-index'
 alias gsw='git stash save --include-untracked --keep-index'
-
+```
+```
 # Submodule (S)
 alias gS='git submodule'
 alias gSa='git submodule add'
@@ -142,7 +169,9 @@ alias gSm='git-submodule-move'
 alias gSs='git submodule sync'
 alias gSu='git submodule foreach git pull origin master'
 alias gSx='git-submodule-remove'
+```
 
+```
 # Working Copy (w)
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
